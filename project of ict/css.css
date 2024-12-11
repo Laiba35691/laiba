@@ -1,0 +1,72 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: flex; /* Use flexbox for parallel layout */
+            flex-wrap: wrap; /* Wrap images to the next row if needed */
+            justify-content: center; /* Center images */
+            gap: 15px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            max-width: 30%; /* Each image takes 30% of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-gallery img {
+                max-width: 45%; /* Two images per row on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-gallery img {
+                max-width: 100%; /* One image per row on small screens */
+            }
+        }
+    
